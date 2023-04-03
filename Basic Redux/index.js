@@ -51,6 +51,6 @@ function incrementByAmount(value){
     return {type: incByAmt,payload: value}
 }
 setTimeout(()=>{
-store.dispatch(getUser(2))
+store.dispatch(getUser(3))
 },1000)
 
