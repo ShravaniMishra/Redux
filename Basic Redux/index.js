@@ -19,8 +19,17 @@ function reducer(state={amount:100},action){
     // history.push(store.getState())
     // console.log(history)
 
-
+// Action createStore
+function increment(){
+    return {type:"increment"}
+}
+function decrement(){
+    return {type:"decrement"}
+}
+function incrementByAction(value){
+    return {type: "incrementByAction",payload: value}
+}
 setInterval(()=>{
-store.dispatch({type: "incrementByAction",payload: 2})
-},5000)
+store.dispatch(incrementByAction(5))
+},1000)
 
